@@ -1,0 +1,71 @@
+@media screen and (max-width:1440px) {
+    .decor-content,
+    .furniture-content {
+        width: 90%;
+    }
+
+    .movies-container {
+        width: 90%;
+    }
+
+    .about-us-content {
+        width: 90%;
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+    .dots-left-side {
+    margin-left:-100px;
+    margin-top:100px;
+    }
+    .decor {
+      margin-right:-100px;
+    }
+    .intro {
+      margin-top:-50px;
+    }
+    .banner-welcome {
+        .learn_more {
+          margin:1em 0;
+        }
+      }
+      .furniture-text {
+          right: -100%;
+      }
+      .about-word {
+          position: absolute;
+          top: 25%;
+          left: -50%;
+        }
+        .big-play-icon {
+            font-size: 45em;
+
+        }
+        .woody-background {
+            padding: 300px 0;
+          }
+          .complexity-content {
+              top: 5%;
+              left: 5%;
+              right: 5%;
+              bottom: 5%;
+        }
+        .decor-content,
+        .furniture-content {
+        .img {
+            width: 50%;
+          }
+        }
+        .image-item{
+          width: 80%;
+        }
+
+
+}
+
+@media screen and (max-width:1024px){
+  img{
+    // width:70% !important;
+  }
+}

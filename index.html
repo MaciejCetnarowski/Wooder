@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wooder</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/rwd-styles.css"> -->
+    <link rel="stylesheet" href="css/rwd-styles.css">
 
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,14 +22,13 @@
                     <div class="wood2">
                     </div>
                 </div>
-                <!-- <div class="dark"></div> -->
                 <div class="banner-content">
                     <header>
                         <div class="mob-menu">
                             <span>&equiv;</span> MENU
                         </div>
                         <nav>
-                            <div class="logo">W<span>oo</span>der</div>
+                            <div class="logo"><a href="#banner">W<span>oo</span>der</a></div>
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Products</a></li>
@@ -37,10 +36,16 @@
                             </ul>
                         </nav>
                         <div class="info">
-                            <a href="#">
+                            <a href="https://www.behance.net/Olianishyn" target="_blank">
                                 <div class="i">i</div>
                             </a>
-                            <p class="lang">EN <span>&dtrif;</span></p>
+                            <select class="language-settings" name="language" id="language">
+                              <optgroup>
+                                <option value="en">EN</option>
+                                <option value="pl">PL</option>
+                              </optgroup>
+                            </select>
+                            <!-- <p class="lang">EN <span>&dtrif;</span></p> -->
 
                         </div>
                     </header>
@@ -81,14 +86,14 @@
                         <div class="about-furniture">
                             <h1>Furniture</h1>
                             <p>Wooder utillizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood</p>
-                            <button>Learn more <span>&xrarr;</span></button>
+                            <button class="learn-button">Learn more <span>&xrarr;</span></button>
                         </div>
                         <div class="item_nr">
                             <p>01<span>.</span></p>
                         </div>
                     </div>
                     <div class="img">
-                        <img src="imgs/furniture.png" alt="furniture-desk">
+                        <img class="image-item" src="imgs/furniture.png" alt="furniture-desk">
                         <div class="furniture-text">Furniture</div>
                     </div>
                 </div>
@@ -97,16 +102,15 @@
         <section>
             <div class="decor-container">
                 <div class="decor-content">
-
                     <div class="img">
-                        <img src="imgs/decor.png" alt="decor-wood">
+                        <img class="image-item" src="imgs/decor.png" alt="decor-wood">
                         <div class="decor-text">Decor</div>
                     </div>
                     <div class="content">
                         <div class="about-decor">
                             <h1>Decor</h1>
                             <p>We make all types of wooden decor ass per design given by Architect, Interior Designer, contract which is suitable</p>
-                            <button>Learn more <span>&xrarr;</span></button>
+                            <button class="learn-button">Learn more <span>&xrarr;</span></button>
                         </div>
                         <div class="pre"></div>
                         <div class="item_nr">
@@ -128,7 +132,9 @@
                     <div class="movie">
                         <div class="movie-miniature">
                             <div class="miniature miniature_table">
-                                <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                <a href="https://www.youtube.com/watch?v=Q5691RGDUJ4" target="_blank">
+                                    <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                </a>
                             </div>
                         </div>
                         <hr>
@@ -137,7 +143,9 @@
                     <div class="movie">
                         <div class="movie-miniature">
                             <div class="miniature miniature_chair">
-                                <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                <a href="https://www.youtube.com/watch?v=Q5691RGDUJ4" target="_blank">
+                                    <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                </a>
                             </div>
                         </div>
                         <hr>
@@ -146,7 +154,9 @@
                     <div class="movie">
                         <div class="movie-miniature">
                             <div class="miniature miniature_desk">
-                                <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                <a href="https://www.youtube.com/watch?v=Q5691RGDUJ4" target="_blank">
+                                    <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                </a>
                             </div>
 
                         </div>
@@ -175,6 +185,31 @@
                 <div class="v-letter">V</div>
             </div>
         </section>
+        <section>
+            <div class="about-us-container">
+                <div class="about-us-content">
+                    <div class="img">
+                        <img class="image-item" src="imgs/aboutUs.png" alt="About us">
+                    </div>
+
+                    <div class="about-us-text">
+                        <h1>About us</h1>
+                        <p>We are a team of a professionals in the wood<br>processing and the creation of wooden furniture of the highest class</p>
+                        <button class="learn-button">Learn more <span>&xrarr;</span> </button>
+                    </div>
+                    <div class="about-word">About&nbsp;us</div>
+                    <div class="a-letter">A</div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="copy-year">&copy; 2016 Wooder</div>
+                <div class="logo"><a href="#banner">W<span>oo</span>der</a></div>
+                <div class="designed-by">Designed by <a href="https://www.behance.net/Olianishyn" target="_blank">Vlacheslav Ollanishyn</a></div>
+
+            </div>
+        </footer>
     </main>
 
 
