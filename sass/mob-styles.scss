@@ -1,0 +1,81 @@
+@import 'colors';
+
+.mob-menu {
+    background: rgba(0,0,0,0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+        font-size: 3em;
+        border: 5px solid #fff;
+        list-style-type: none;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        padding: 7%;
+        text-transform: uppercase;
+        display: block;
+
+        li {
+            text-align: center;
+            border: 1px solid $gray;
+
+            a {
+                padding: 10px 30px;
+                display: flex;
+                justify-content: center;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.mob-menu.active {
+    display: flex;
+}
+
+.close-mob-menu {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 5px solid #fff;
+    border-top: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mob-menu-button.mobile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+    animation: popup 0.4s forwards;
+    @keyframes popup {
+        to {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .mob-menu {
+        ul {
+            font-size: 2em;
+        }
+    }
+}
