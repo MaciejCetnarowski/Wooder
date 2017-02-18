@@ -8,13 +8,12 @@
     <title>Wooder</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/rwd-styles.css">
-
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <main>
-        <section id="banner">
+        <section id="home">
             <div class="banner-container">
                 <div class="background">
                     <div class="wood1">
@@ -24,15 +23,15 @@
                 </div>
                 <div class="banner-content">
                     <header>
-                        <div class="mob-menu">
+                        <div class="mob-menu-button">
                             <span>&equiv;</span> MENU
                         </div>
                         <nav>
-                            <div class="logo"><a href="#banner">W<span>oo</span>der</a></div>
+                            <div class="logo"><a href="#home">W<span>oo</span>der</a></div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#about-us">About</a></li>
                             </ul>
                         </nav>
                         <div class="info">
@@ -45,8 +44,6 @@
                                 <option value="pl">PL</option>
                               </optgroup>
                             </select>
-                            <!-- <p class="lang">EN <span>&dtrif;</span></p> -->
-
                         </div>
                     </header>
                     <div class="intro">
@@ -64,8 +61,6 @@
                             <button class="learn_more">Learn more <span>&xrarr;</span> </button>
                             <div class="scroll">
                                 <img src="imgs/mouse.png" alt="">
-
-
                                 <p><span>&sc;</span>Scroll</p>
                             </div>
                         </div>
@@ -76,9 +71,16 @@
                 <div class="f-letter">F</div>
                 <div class="clip"></div>
             </div>
-
+            <div class="mob-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about-us">About</a></li>
+                </ul>
+                <div class="close-mob-menu">Close</div>
+            </div>
         </section>
-        <section>
+        <section id="products">
             <div class="furniture-container">
                 <div class="furniture-content">
                     <div class="content">
@@ -158,13 +160,11 @@
                                     <div class="play-icon"><i class="fa fa-play" aria-hidden="true"></i></div>
                                 </a>
                             </div>
-
                         </div>
                         <hr>
                         <p class="movie-title">Quality Products</p>
                     </div>
                 </div>
-
             </div>
             <div class="complexity-container">
                 <div class="woody-background"></div>
@@ -180,18 +180,16 @@
                     Watch video
                   </button>
                     </div>
-
                 </div>
                 <div class="v-letter">V</div>
             </div>
         </section>
-        <section>
+        <section id="about-us">
             <div class="about-us-container">
                 <div class="about-us-content">
                     <div class="img">
                         <img class="image-item" src="imgs/aboutUs.png" alt="About us">
                     </div>
-
                     <div class="about-us-text">
                         <h1>About us</h1>
                         <p>We are a team of a professionals in the wood<br>processing and the creation of wooden furniture of the highest class</p>
@@ -207,12 +205,12 @@
                 <div class="copy-year">&copy; 2016 Wooder</div>
                 <div class="logo"><a href="#banner">W<span>oo</span>der</a></div>
                 <div class="designed-by">Designed by <a href="https://www.behance.net/Olianishyn" target="_blank">Vlacheslav Ollanishyn</a></div>
-
             </div>
         </footer>
     </main>
-
-
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="functions/soft-wrap-nav.js"></script>
+    <script src="functions/mob-menu.js"></script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 
